@@ -2,14 +2,15 @@
     --color-primary: #D4AF37;
     /* Gold */
     --color-primary-dark: #B5952F;
-    --color-secondary: #1A1A1A;
-    /* Dark Grey/Black */
-    --color-bg-cream: #F9F4EB;
+    --color-secondary: #5E5B52;
+    /* Dark Taupe/Olive from Screenshot */
+    --color-bg-cream: #F4F4F4;
+    /* Neutral Light Grey instead of warm cream */
     --color-white: #FFFFFF;
     --color-text-body: #4A4A4A;
     --color-border: #E5E5E5;
 
-    --font-heading: 'Playfair Display', serif;
+    --font-heading: 'Montserrat', sans-serif;
     --font-body: 'Inter', sans-serif;
 
     --spacing-xs: 0.5rem;
@@ -125,7 +126,7 @@ img {
 
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #F9f4eb 0%, #F5E6CC 100%);
+    background: linear-gradient(135deg, #FFFFFF 0%, #F0F0F0 100%);
     padding: var(--spacing-lg) 0;
 }
 
@@ -201,7 +202,7 @@ img {
 /* Product Details Right Column */
 .science-badge {
     display: inline-block;
-    background-color: #E8E2D2;
+    background-color: #F0F0F0;
     padding: 0.3rem 0.8rem;
     border-radius: 4px;
     font-size: 0.8rem;
@@ -222,7 +223,7 @@ img {
     font-weight: 600;
     margin-left: 0.5rem;
     font-size: 0.8rem;
-    background: #E8E2D2;
+    background: #F0F0F0;
     padding: 2px 6px;
     border-radius: 4px;
 }
@@ -237,7 +238,7 @@ img {
 .product-subtitle {
     font-family: var(--font-body);
     /* Reset font */
-    color: #C19A6B;
+    color: #E6B800;
     /* Gold/Brown text */
     font-size: 1rem;
     margin-bottom: 1.5rem;
@@ -368,7 +369,7 @@ img {
 }
 
 .option-header {
-    background-color: #C19A6B;
+    background-color: #E6B800;
     /* Gold header */
     color: white;
     font-size: 0.8rem;
@@ -518,8 +519,8 @@ img {
 
 /* Hero Guarantee Box */
 .guarantee-box {
-    background-color: #E8E2D2;
-    border: 1px solid #C19A6B;
+    background-color: #F0F0F0;
+    border: 1px solid #E6B800;
     border-radius: 8px;
     padding: 1rem;
     display: flex;
@@ -601,7 +602,7 @@ img {
     text-align: center;
     font-size: 2.5rem;
     /* Larger title */
-    color: #C19A6B;
+    color: #E6B800;
     /* Gold/Brown color from reference */
     margin-bottom: var(--spacing-md);
 }
@@ -666,7 +667,7 @@ img {
 }
 
 .review-header .stars {
-    color: #C19A6B;
+    color: #E6B800;
     /* Gold star color */
     font-size: 0.9rem;
 }
@@ -681,7 +682,7 @@ img {
 
 .verified-badge {
     background-color: #FEF9EB;
-    color: #C19A6B;
+    color: #E6B800;
     padding: 2px 6px;
     border-radius: 4px;
     font-size: 0.75rem;
@@ -730,7 +731,7 @@ img {
     display: block;
     font-size: 0.9rem;
     font-weight: 700;
-    color: #C19A6B;
+    color: #E6B800;
     margin-bottom: 4px;
 }
 
@@ -952,7 +953,7 @@ img {
 
 .ing-icon {
     font-size: 1.2rem;
-    color: #C19A6B;
+    color: #E6B800;
     /* Base gold */
     margin-top: 2px;
 }
@@ -1028,7 +1029,7 @@ img {
 
 /* Total T Column (Card style) */
 .us-col {
-    background-color: #E8E2D2;
+    background-color: #F0F0F0;
     /* Light Gold/Tan background */
     border-radius: 12px;
     padding: 0 0 1rem 0;
@@ -1075,7 +1076,7 @@ img {
 .check-circle {
     width: 28px;
     height: 28px;
-    background-color: #C19A6B;
+    background-color: #E6B800;
     /* Solid Gold */
     color: white;
     border-radius: 50%;
@@ -1172,7 +1173,7 @@ img {
 .stat-number {
     font-size: 3.5rem;
     font-weight: 700;
-    color: #C19A6B;
+    color: #E6B800;
     /* Gold number */
     min-width: 120px;
     line-height: 1;
@@ -1424,44 +1425,104 @@ img {
         height: 20px;
         font-size: 0.6rem;
     }
+}
 
-    @media (max-width: 768px) {
-        .header-container {
-            flex-direction: column;
-            gap: 1rem;
-        }
-
-        .main-nav ul {
-            gap: 1rem;
-        }
-
-        .hero-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .reviews-grid,
-        .steps-grid,
-        .ingredients-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .footer-grid {
-            grid-template-columns: 1fr;
-            text-align: center;
-        }
-
-        .timeline::before {
-            left: 10px;
-        }
-
-        .timeline-item {
-            padding-left: 40px;
-        }
-
-        .timeline-marker {
-            width: 30px;
-            height: 30px;
-            left: -5px;
-            font-size: 0.8rem;
-        }
+@media (max-width: 768px) {
+    .header-container {
+        flex-direction: column;
+        gap: 1rem;
     }
+
+    .main-nav ul {
+        gap: 1rem;
+    }
+
+    .hero-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .reviews-grid,
+    .steps-grid,
+    .ingredients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-grid {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+
+    .timeline-marker {
+        width: 30px;
+        height: 30px;
+        left: -5px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Detailed Ingredients Grid */
+.detailed-ingredients-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+}
+
+.det-ing-card {
+    background-color: var(--color-white);
+    padding: 1.5rem;
+    border-radius: 8px;
+    border: 1px solid #eee;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+    transition: transform 0.2s;
+}
+
+.det-ing-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.05);
+}
+
+.det-ing-card h3 {
+    color: #E6B800;
+    /* Gold */
+    font-size: 1.1rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.det-ing-card p {
+    font-size: 0.9rem;
+    color: #555;
+    line-height: 1.5;
+}
+
+@media (max-width: 768px) {
+    .detailed-ingredients-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Logo Images */
+    .logo-img {
+        height: 40px;
+        width: auto;
+        object-fit: contain;
+    }
+
+    .footer-logo-img {
+        height: 60px;
+        /* Slightly larger for footer */
+        width: auto;
+        object-fit: contain;
+        background: rgba(255, 255, 255, 0.1);
+        /* Subtle backing if transparent/black on black */
+        padding: 5px;
+        border-radius: 4px;
+    }
+}
